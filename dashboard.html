@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Result Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand bg-body-light pt-3 pb-2">
+        <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/resultpro 1.png" width="170px" alt="Bootstrap">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary-dark active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-primary-dark dropdown-toggle active" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">administration</a></li>
+                            <li><a class="dropdown-item" href="#">student</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">administration</a></li>
+                            <li><a class="dropdown-item" href="#">student</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="d-flex">
+        <aside>
+            <div class="flex-shrink-0 p-3 bg-primary-grey"
+                style="width: 280px; height: 550px; min-height: fit-content;">
+
+                <div class="d-flex  flex-column  link-body-emphasis text-decoration-none">
+                    <img class="align-self-center" src="images/Ellipse 4.png" alt="">
+                </div>
+
+                <a href="/" class="btn link-body-emphasis text-decoration-none py-4 text-start mb-3 d-block">
+                    <img src="./images/icons/Vector-1.svg" alt="">
+                    <span class="ps-2">DASHBOARD</span>
+                </a>
+
+                <ul class="list-unstyled ps-0">
+
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#dashboard-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/Group.svg" alt="">
+                            Department
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#dashboard-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="dashboard-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/Vector.svg" alt="">
+                            Courses
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#home-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="home-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#orders-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/formkit_people.svg" alt="">
+                            Student
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#orders-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="orders-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#result-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/carbon_result.svg" alt="">
+                            Results
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#result-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="result-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#grading-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/Vector-3.svg" alt="">
+                            Grading System
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#grading-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="grading-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <div class="collapsed btn" role="button" data-bs-toggle="collapse"
+                            data-bs-target="#setting-collapse" aria-expanded="false">
+                            <img class="pe-2" src="./images/icons/Vector-2.svg" alt="">
+                            setting
+                            <button class="d-inline-flex btn btn-toggle" data-bs-toggle="collapse"
+                                data-bs-target="#setting-collapse" aria-expanded="false"></button>
+                        </div>
+                        <div class="collapse" id="setting-collapse" style="">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Updates</a>
+                                </li>
+                                <li><a href="#"
+                                        class="link-body-emphasis d-inline-flex text-decoration-none rounded">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="border-top my-3"></li>
+
+                    <button class="btn bg-primary-dark text-light ms-2">logout</button>
+                </ul>
+            </div>
+        </aside>
+
+        <section class="flex-grow-1 px-4">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-primary-dark" href="#">
+                        <svg class="me-2" width="15" height="15" viewBox="0 0 15 15" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 0H6.66667V6.66667H0V0ZM8.33333 0H15V6.66667H8.33333V0ZM0 8.33333H6.66667V15H0V8.33333ZM12.5 8.33333H10.8333V10.8333H8.33333V12.5H10.8333V15H12.5V12.5H15V10.8333H12.5V8.33333Z"
+                                fill="currentColor" />
+                        </svg>
+                        Dashboard
+                    </a>
+                </div>
+            </nav>
+
+            <div class="mt-4 row justify-content-around">
+                <div class="shadow text-color-grey-2 py-4 d-flex flex-column justify-content-around align-items-center col-12 col-sm-6 col-md-3 mb-4"
+                    style="width: 15rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3.2rem" height="3.2rem" viewBox="0 0 66 66"
+                        fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M41.2493 16.5002C41.2498 18.2069 40.7212 19.8718 39.7362 21.2656C38.7512 22.6594 37.3583 23.7135 35.7493 24.2827V30.2502H43.9993C46.1874 30.2502 48.2858 31.1194 49.833 32.6666C51.3802 34.2138 52.2493 36.3122 52.2493 38.5002V41.7177C54.085 42.3665 55.6321 43.6433 56.6173 45.3225C57.6026 47.0016 57.9624 48.9751 57.6333 50.8939C57.3042 52.8128 56.3073 54.5535 54.8189 55.8084C53.3304 57.0633 51.4462 57.7516 49.4993 57.7516C47.5525 57.7516 45.6683 57.0633 44.1798 55.8084C42.6914 54.5535 41.6945 52.8128 41.3654 50.8939C41.0363 48.9751 41.3961 47.0016 42.3814 45.3225C43.3666 43.6433 44.9137 42.3665 46.7493 41.7177V38.5002C46.7493 37.7709 46.4596 37.0714 45.9439 36.5557C45.4282 36.04 44.7287 35.7502 43.9993 35.7502H21.9993C21.27 35.7502 20.5705 36.04 20.0548 36.5557C19.5391 37.0714 19.2493 37.7709 19.2493 38.5002V41.7177C21.085 42.3665 22.6321 43.6433 23.6173 45.3225C24.6026 47.0016 24.9624 48.9751 24.6333 50.8939C24.3042 52.8128 23.3073 54.5535 21.8189 55.8084C20.3304 57.0633 18.4462 57.7516 16.4993 57.7516C14.5525 57.7516 12.6683 57.0633 11.1798 55.8084C9.69136 54.5535 8.69448 52.8128 8.36537 50.8939C8.03626 48.9751 8.39613 47.0016 9.38136 45.3225C10.3666 43.6433 11.9137 42.3665 13.7493 41.7177V38.5002C13.7493 36.3122 14.6185 34.2138 16.1657 32.6666C17.7129 31.1194 19.8113 30.2502 21.9993 30.2502H30.2493V24.2827C28.8225 23.779 27.5616 22.8927 26.6045 21.7208C25.6474 20.5488 25.031 19.1362 24.8225 17.6375C24.6141 16.1388 24.8217 14.6116 25.4227 13.2229C26.0237 11.8342 26.9949 10.6375 28.2301 9.76358C29.4653 8.88965 30.9171 8.37214 32.4266 8.26763C33.9361 8.16313 35.4453 8.47565 36.7892 9.17103C38.1331 9.86641 39.26 10.9179 40.0466 12.2105C40.8332 13.5031 41.2493 14.9871 41.2493 16.5002ZM32.9993 13.7502C32.27 13.7502 31.5705 14.04 31.0548 14.5557C30.5391 15.0714 30.2493 15.7709 30.2493 16.5002C30.2493 17.2296 30.5391 17.9291 31.0548 18.4448C31.5705 18.9605 32.27 19.2502 32.9993 19.2502C33.7287 19.2502 34.4282 18.9605 34.9439 18.4448C35.4596 17.9291 35.7493 17.2296 35.7493 16.5002C35.7493 15.7709 35.4596 15.0714 34.9439 14.5557C34.4282 14.04 33.7287 13.7502 32.9993 13.7502ZM16.4993 46.7502C15.77 46.7502 15.0705 47.04 14.5548 47.5557C14.0391 48.0714 13.7493 48.7709 13.7493 49.5002C13.7493 50.2296 14.0391 50.9291 14.5548 51.4448C15.0705 51.9605 15.77 52.2502 16.4993 52.2502C17.2287 52.2502 17.9282 51.9605 18.4439 51.4448C18.9596 50.9291 19.2493 50.2296 19.2493 49.5002C19.2493 48.7709 18.9596 48.0714 18.4439 47.5557C17.9282 47.04 17.2287 46.7502 16.4993 46.7502ZM49.4993 46.7502C48.77 46.7502 48.0705 47.04 47.5548 47.5557C47.0391 48.0714 46.7493 48.7709 46.7493 49.5002C46.7493 50.2296 47.0391 50.9291 47.5548 51.4448C48.0705 51.9605 48.77 52.2502 49.4993 52.2502C50.2287 52.2502 50.9282 51.9605 51.4439 51.4448C51.9596 50.9291 52.2493 50.2296 52.2493 49.5002C52.2493 48.7709 51.9596 48.0714 51.4439 47.5557C50.9282 47.04 50.2287 46.7502 49.4993 46.7502Z"
+                            fill="#BEBBBB" />
+                    </svg>
+                    <p class="mb-0" style="font-size: 1.25rem;">Department</p>
+                    <span style="font-size: 1.2rem;">2</span>
+                </div>
+
+                <div class="shadow text-color-grey-2 py-4 d-flex flex-column justify-content-around align-items-center col-12 col-sm-6 col-md-3 mb-4"
+                    style="width: 15rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2rem" viewBox="0 0 48 40"
+                        fill="none">
+                        <path
+                            d="M4.8 8H0V36C0 38.2 2.16 40 4.8 40H38.4V36H4.8V8ZM43.2 0H14.4C11.76 0 9.6 1.8 9.6 4V28C9.6 30.2 11.76 32 14.4 32H43.2C45.84 32 48 30.2 48 28V4C48 1.8 45.84 0 43.2 0ZM40.8 18H16.8V14H40.8V18ZM31.2 26H16.8V22H31.2V26ZM40.8 10H16.8V6H40.8V10Z"
+                            fill="#837D7D" />
+                    </svg>
+                    <p class="mb-0" style="font-size: 1.25rem;">Courses</p>
+                    <span style="font-size: 1.2rem;">9</span>
+                </div>
+
+                <div class="shadow text-color-grey-2 py-4 d-flex flex-column justify-content-around align-items-center col-12 col-sm-6 col-md-3 mb-4"
+                    style="width: 15rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="2.9rem" viewBox="0 0 54 58"
+                        fill="none">
+                        <path
+                            d="M27 25.375C24.6131 25.375 22.3239 24.4202 20.636 22.7207C18.9482 21.0211 18 18.716 18 16.3125C18 13.909 18.9482 11.6039 20.636 9.90434C22.3239 8.2048 24.6131 7.25 27 7.25C29.3869 7.25 31.6761 8.2048 33.364 9.90434C35.0518 11.6039 36 13.909 36 16.3125C36 18.716 35.0518 21.0211 33.364 22.7207C31.6761 24.4202 29.3869 25.375 27 25.375ZM27 10.875C24.012 10.875 21.6 13.3038 21.6 16.3125C21.6 19.3212 24.012 21.75 27 21.75C29.988 21.75 32.4 19.3212 32.4 16.3125C32.4 13.3038 29.988 10.875 27 10.875Z"
+                            fill="#837D7D" />
+                        <path
+                            d="M48.6 39.875C47.592 39.875 46.8 39.0775 46.8 38.0625C46.8 37.0475 47.592 36.25 48.6 36.25C49.608 36.25 50.4 35.4525 50.4 34.4375C50.4 32.034 49.4518 29.7289 47.764 28.0293C46.0761 26.3298 43.7869 25.375 41.4 25.375H37.8C36.792 25.375 36 24.5775 36 23.5625C36 22.5475 36.792 21.75 37.8 21.75C40.788 21.75 43.2 19.3212 43.2 16.3125C43.2 13.3038 40.788 10.875 37.8 10.875C36.792 10.875 36 10.0775 36 9.0625C36 8.0475 36.792 7.25 37.8 7.25C40.1869 7.25 42.4761 8.2048 44.164 9.90434C45.8518 11.6039 46.8 13.909 46.8 16.3125C46.8 18.56 46.008 20.59 44.64 22.185C50.004 23.635 54 28.565 54 34.4375C54 37.4462 51.588 39.875 48.6 39.875ZM5.4 39.875C2.412 39.875 0 37.4462 0 34.4375C0 28.565 3.96 23.635 9.36 22.185C8.028 20.59 7.2 18.56 7.2 16.3125C7.2 13.909 8.14821 11.6039 9.83604 9.90434C11.5239 8.2048 13.8131 7.25 16.2 7.25C17.208 7.25 18 8.0475 18 9.0625C18 10.0775 17.208 10.875 16.2 10.875C13.212 10.875 10.8 13.3038 10.8 16.3125C10.8 19.3212 13.212 21.75 16.2 21.75C17.208 21.75 18 22.5475 18 23.5625C18 24.5775 17.208 25.375 16.2 25.375H12.6C10.2131 25.375 7.92387 26.3298 6.23604 28.0293C4.54821 29.7289 3.6 32.034 3.6 34.4375C3.6 35.4525 4.392 36.25 5.4 36.25C6.408 36.25 7.2 37.0475 7.2 38.0625C7.2 39.0775 6.408 39.875 5.4 39.875ZM37.8 50.75H16.2C13.212 50.75 10.8 48.3213 10.8 45.3125V41.6875C10.8 34.6912 16.452 29 23.4 29H30.6C37.548 29 43.2 34.6912 43.2 41.6875V45.3125C43.2 48.3213 40.788 50.75 37.8 50.75ZM23.4 32.625C21.0131 32.625 18.7239 33.5798 17.036 35.2793C15.3482 36.9789 14.4 39.284 14.4 41.6875V45.3125C14.4 46.3275 15.192 47.125 16.2 47.125H37.8C38.808 47.125 39.6 46.3275 39.6 45.3125V41.6875C39.6 39.284 38.6518 36.9789 36.964 35.2793C35.2761 33.5798 32.9869 32.625 30.6 32.625H23.4Z"
+                            fill="#837D7D" />
+                    </svg>
+                    <p class="mb-0" style="font-size: 1.25rem;">Students</p>
+                    <span style="font-size: 1.2rem;">2</span>
+                </div>
+
+                <div class="shadow text-color-grey-2 py-4 d-flex flex-column justify-content-around align-items-center col-12 col-sm-6 col-md-3 mb-4"
+                    style="width: 15rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" viewBox="0 0 57 57" fill="none">
+                        <path
+                            d="M24.9375 40.9688H39.1875V44.5312H24.9375V40.9688ZM17.8125 40.9688H21.375V44.5312H17.8125V40.9688ZM24.9375 32.0625H39.1875V35.625H24.9375V32.0625ZM17.8125 32.0625H21.375V35.625H17.8125V32.0625ZM24.9375 23.1562H39.1875V26.7188H24.9375V23.1562ZM17.8125 23.1562H21.375V26.7188H17.8125V23.1562Z"
+                            fill="#837D7D" />
+                        <path
+                            d="M44.5312 8.90625H39.1875V7.125C39.1875 6.18017 38.8122 5.27403 38.1441 4.60593C37.476 3.93783 36.5698 3.5625 35.625 3.5625H21.375C20.4302 3.5625 19.524 3.93783 18.8559 4.60593C18.1878 5.27403 17.8125 6.18017 17.8125 7.125V8.90625H12.4688C11.5239 8.90625 10.6178 9.28158 9.94968 9.94968C9.28158 10.6178 8.90625 11.5239 8.90625 12.4688V49.875C8.90625 50.8198 9.28158 51.726 9.94968 52.3941C10.6178 53.0622 11.5239 53.4375 12.4688 53.4375H44.5312C45.4761 53.4375 46.3822 53.0622 47.0503 52.3941C47.7184 51.726 48.0938 50.8198 48.0938 49.875V12.4688C48.0938 11.5239 47.7184 10.6178 47.0503 9.94968C46.3822 9.28158 45.4761 8.90625 44.5312 8.90625ZM21.375 7.125H35.625V14.25H21.375V7.125ZM44.5312 49.875H12.4688V12.4688H17.8125V17.8125H39.1875V12.4688H44.5312V49.875Z"
+                            fill="#837D7D" />
+                    </svg>
+                    <p class="mb-0" style="font-size: 1.25rem;">Result</p>
+                    <span style="font-size: 1.2rem;">2</span>
+                </div>
+            </div>
+
+            <div class="shadow p-4 rounded rounded-md ">
+                <table class="table table-striped table-hover caption-top">
+                    <caption>Recent Declared Results</caption>
+                    <thead>
+                        <tr>
+                            <td scope="col">STUDENT NAME</td>
+                            <td scope="col">MAT NO.</td>
+                            <td scope="col">DEPARTMENT</td>
+                            <td scope="col">GENDER</td>
+                            <td scope="col">GENDER</td>
+                            <td scope="col">STATUS</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>EGBEWOLE AYOTUNDE</td>
+                            <td>U2018/5570144</td>
+                            <td>COMPUTER SCIENCE</td>
+                            <td>MALE</td>
+                            <td>10-JAN-1998</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                        <tr>
+                            <td>onyeamaechi stella</td>
+                            <td>U2018/5570067</td>
+                            <td>microbiology</td>
+                            <td>female</td>
+                            <td>27-oct-2000</td>
+                            <td>ACTIVE</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                    <div class="text-primary-grey d-flex gap-3">
+                        <img src="./images/icons/move/double-left.svg" alt="">
+                        <img src="./images/icons/move/left.svg" alt="">
+    
+                        <span class="text-light rounded-circle bg-primary-light d-inline-block px-2" >1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>...</span>
+                        <span>7</span>
+    
+                        <img src="./images/icons/move/right.svg" alt="">
+                        <img src="./images/icons/move/double-right.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
