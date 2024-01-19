@@ -5,6 +5,7 @@
     --primary-dark: #006;
     --grey: rgba(35, 50, 85, 0.05);
     --grey-2: rgba(131, 125, 125, 1);
+    --grey-3: rgba(90, 85, 85, 1);
     font-family: "Inter", sans-serif !important;
 }
 
@@ -20,6 +21,10 @@
     color: var(--grey-2) !important;
 }
 
+.text-color-grey-3{
+    color: var(--grey-3) !important;
+}
+
 .bg-primary-dark{
     background-color: var(--primary-dark) !important;
 }
@@ -33,7 +38,7 @@
 }
 
 header{
-    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/home-back.jpeg);
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home-back.jpeg);
     background-size:cover;
 }
 /* table styline */

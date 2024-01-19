@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/partials.js"></script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <main>
+        <div class="modal show" id="exampleModal" tabindex="-1"
+            style="display: block; background-color: rgba(0, 0, 0, 0.5);" role="dialog" aria-modal="true">
+            <div class="modal-dialog d-grid justify-content-center">
+                <div class="modal-content px-4 py-5 text-color-grey-3" style="width: 40rem;">
+                    <div class="modal-header border-0 pb-3">
+                        <h5 class="modal-title mx-auto">Student Registration</h5>
+                    </div>
+                    <div class="modal-body ">
+                        <form action="">
+                            <div class="mb-4">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="email" class="form-control" placeholder="Enter First Name" id="firstName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="email" class="form-control" placeholder="Enter Last Name" id="lastName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="middleName" class="form-label">Middle Name</label>
+                                <input type="email" class="form-control" placeholder="Enter Middle Name" id="middleName"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="matNumber" class="form-label">Mat. Number</label>
+                                <input type="email" class="form-control" placeholder="Enter Mat. Number" id="matNumber"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" placeholder="Enter Email" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-4">
+                                <label for="yoenrollment" class="form-label">Year of Enrollment</label>
+                                <select class="form-select" placeholder="Enter Mat. Number"
+                                    aria-label="Large select example">
+                                    <option value="" disabled selected hidden>Enter Mat. Number</option>
+                                    <option value="1">2021</option>
+                                    <option value="2">2022</option>
+                                    <option value="3">2023</option>
+                                    <option value="4">2024</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input type="password" placeholder="Enter Password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-4">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" class="form-control"
+                                    id="confirmPassword">
+                            </div>
+
+                            <div class="mx-auto d-flex flex-column align-items-center pt-2">
+                                <button class="btn w-100 bg-primary-dark py-2 text-white" style="width: 20rem; max-width: 90%;" type="submit">Register</button>
+                                <p>Already have an account? <a class="text-primary-dark text-decoration-none" href="student_login.html">login</a></p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        include('#navbar', '/components/dashboard_navbar.html', { replaceParent: true });
+        $("#exampleModal").modal()
+    </script>
+
+    <style>
+        body {
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/home-back.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</body>
+
+</html>
