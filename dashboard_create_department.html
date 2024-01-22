@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Department | Student Result Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/sidebar.css">
+    <script src="static/js/partials.js"></script>
+</head>
+
+<body>
+    <div id="dashboard-navbar"></div>
+
+    <main class="d-flex">
+        <aside>
+           <div id="dashboard-sidebar"></div>
+        </aside>
+
+        <section class="flex-grow-1 px-4">
+            <nav class="navbar bg-body-tertiary px-3">
+                <div class="container-fluid ">
+                    <a class="navbar-brand text-primary-dark" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 31 31" fill="none">
+                            <path d="M31 19.375H19.375V31H11.625V19.375H0V11.625H11.625V0H19.375V11.625H31V19.375Z" fill="#000066" />
+                        </svg>
+                        Create Department
+                    </a>
+                    <div class="breadcrumb d-flex align-items-center m-0"  style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item active"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Departments</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Create Department</li>
+                        </ol>
+                    </div>
+                </div>
+
+            <div class="my-4 mx-auto py-5" style="box-shadow: 0px 1px 23px 5px rgba(0, 0, 0, 0.08); border-radius: 0.8125rem; width: 55rem; max-width: 100%; padding-bottom: 80px !important;">
+                <form class="mx-auto" style="width: 38rem;" action="">
+                    <legend class="col-form-label">Create Department</legend>
+                    <div class="mb-4 pt-5">
+                        <label for="matNumber" class="form-label">Department Name</label>
+                        <input type="email" class="form-control" placeholder="Enter Department Name" id="matNumber"
+                            aria-describedby="emailHelp">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="exampleInputPassword1" class="form-label">Session</label>
+                        <input type="password" placeholder="Select Session" class="form-control"
+                            id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mx-auto d-flex flex-column align-items-center pt-2">
+                        <button class="btn w-100 bg-primary-dark py-2 text-white" type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    
+    <script>
+        include('#dashboard-navbar', 'components/dashboard_navbar.html', {replaceParent: true});
+        include('#dashboard-sidebar', 'components/dashboard_sidebar.html', {replaceParent: true});
+    </script>
+</body>
+
+</html>
