@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Result | Student Result Management Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/sidebar.css">
+    <script src="static/js/partials.js"></script>
+</head>
+
+<body>
+    <div id="dashboard-navbar"></div>
+
+    <main class="d-flex">
+        <aside>
+            <div id="dashboard-sidebar"></div>
+        </aside>
+
+        <section class="flex-grow-1 px-4">
+            <nav class="navbar bg-body-tertiary px-3">
+                <div class="container-fluid ">
+                    <a class="navbar-brand text-primary-dark" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 31 31" fill="none">
+                            <path d="M31 19.375H19.375V31H11.625V19.375H0V11.625H11.625V0H19.375V11.625H31V19.375Z"
+                                fill="#000066" />
+                        </svg>
+                        Create Department
+                    </a>
+                    <div class="breadcrumb d-flex align-items-center m-0" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item active"><a href="dashboard.html">Home</a></li>
+                            <li class="breadcrumb-item active"><a href="#">Departments</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Create Department</li>
+                        </ol>
+                    </div>
+                </div>
+            </nav>
+
+                <div class="my-4 mx-auto py-5"
+                    style="box-shadow: 0px 1px 23px 5px rgba(0, 0, 0, 0.08); border-radius: 0.8125rem; width: 55rem; max-width: 100%; padding-bottom: 80px !important; padding-top: 80px !important;">
+                    <form class="mx-auto" style="width: 38rem;" action="">
+
+                        <div class="row g-3">
+                            <div class="col mb-4">
+                                <label for="matNumber" class="form-label">Student</label>
+                                <input type="text" class="form-control" placeholder="Select Student"
+                                    aria-label="Select name">
+                            </div>
+                            <div class="col mb-4">
+                                <label for="matNumber" class="form-label">Semester</label>
+                                <input type="text" class="form-control" placeholder="Select Semester" aria-label="Last name">
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col mb-4">
+                                <label for="matNumber" class="form-label">Course</label>
+                                <input type="text" class="form-control" placeholder="Select Course"
+                                    aria-label="Select name">
+                            </div>
+                            <div class="col mb-4">
+                                <label for="matNumber" class="form-label">Credit Unit</label>
+                                <input type="text" class="form-control" placeholder="Select Credit Unit" aria-label="Last name">
+                            </div>
+                        </div>
+
+                        <div class="row g-3 align-items-end">
+                            <div class="col mb-4">
+                                <label for="matNumber" class="form-label">Score</label>
+                                <input type="text" class="form-control" placeholder="Enter Score"
+                                    aria-label="Select name">
+                            </div>
+                            <div class="col mb-4">
+                                <button class="btn bg-primary-dark text-white" type="submit">
+                                    <svg class="pe-1" xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
+                                        <path d="M15 8.75H9.375V14H5.625V8.75H0V5.25H5.625V0H9.375V5.25H15V8.75Z" fill="white"/>
+                                      </svg>
+                                    ADD RESULT
+                                </button>
+                            </div>
+                        </div>
+
+                        <hr>
+                    </form>
+
+
+                    <div class="mx-auto" style="width: 45rem; margin-top: 80px;">
+                        <table class="table table-striped table-hover caption-top mx-auto">
+                            <thead>
+                                <tr>
+                                    <td style="background: #F8F8F8; width: 50%;" scope="col">COURSE TITLE</td>
+                                    <td style="background: #F8F8F8;" scope="col">CU</td>
+                                    <td style="background: #F8F8F8;" scope="col">SCORE</td>
+                                    <td style="background: #F8F8F8;" scope="col">GP</td>
+                                    <td style="background: #F8F8F8;" scope="col">QP</td>
+                                    <td style="background: #F8F8F8;" scope="col">ACTION</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Communication skills in English</td>
+                                    <td>2</td>
+                                    <td>50</td>
+                                    <td>2</td>
+                                    <td>9</td>
+                                    <td class="rows cols-2">
+                                        <img src="./images/icons/edit.svg" alt="">
+                                        <img src="./images/icons/delete.svg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Introduction to philosophy and logic</td>
+                                    <td>2</td>
+                                    <td>60</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                    <td class="rows cols-2">
+                                        <img src="./images/icons/edit.svg" alt="">
+                                        <img src="./images/icons/delete.svg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Communication skills in English</td>
+                                    <td>3</td>
+                                    <td>75</td>
+                                    <td>3</td>
+                                    <td>9</td>
+                                    <td class="rows cols-2">
+                                        <img src="./images/icons/edit.svg" alt="">
+                                        <img src="./images/icons/delete.svg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Introduction to philosophy and logic</td>
+                                    <td>2</td>
+                                    <td>68</td>
+                                    <td>3</td>
+                                    <td>8</td>
+                                    <td class="rows cols-2">
+                                        <img src="./images/icons/edit.svg" alt="">
+                                        <img src="./images/icons/delete.svg" alt="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="d-flex justify-content-end">
+                            <div class="text-primary-grey d-flex gap-3">
+                                <img src="./images/icons/move/double-left.svg" alt="">
+                                <img src="./images/icons/move/left.svg" alt="">
+            
+                                <span class="text-light rounded-circle bg-primary-light d-inline-block px-2" >1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>...</span>
+                                <span>7</span>
+            
+                                <img src="./images/icons/move/right.svg" alt="">
+                                <img src="./images/icons/move/double-right.svg" alt="">
+                            </div>
+                        </div>
+
+                        <table class="table table-custom-striped table-hover caption-top mx-auto mt-5" style="min-width: 300px !important;">
+                            <tbody>
+                                <tr>
+                                    <td>Course Count</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>Total CU</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>TOTAL GP</td>
+                                    <td>22</td>
+                                </tr>
+                                <tr>
+                                    <td>TOTAL QP</td>
+                                    <td>56</td>
+                                </tr>
+                                <tr>
+                                    <td>cgpa</td>
+                                    <td>22</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        include('#dashboard-navbar', 'components/dashboard_navbar.html', { replaceParent: true });
+        include('#dashboard-sidebar', 'components/dashboard_sidebar.html', { replaceParent: true });
+    </script>
+</body>
+
+</html>

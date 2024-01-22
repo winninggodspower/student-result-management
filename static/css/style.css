@@ -6,8 +6,10 @@
     --grey: rgba(35, 50, 85, 0.05);
     --grey-2: rgba(131, 125, 125, 1);
     --grey-3: rgba(90, 85, 85, 1);
+    /* --bs-table-bg: red !important; */
     font-family: "Inter", sans-serif !important;
 }
+
 
 .text-primary-dark{
     color: var(--primary-dark) !important;
